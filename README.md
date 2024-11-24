@@ -52,10 +52,12 @@ https://lp2kpujqn8.execute-api.us-east-1.amazonaws.com
 
 <h3 id="get-original-url">GET /{urlCode}</h3>
 
+The HTTP `302 Found` redirect status response code indicates that the resource requested has been temporarily moved to the URL given by the `Location` header. A browser redirects to this page. ([HTTP Cats](https://http.cat/status/302 "302 Found | HTTP Cats"))
+
 **RESPONSE**
 ```
 > StatusCode: 302 
-> Location: {originalURL}
+> Location: {originalUrl}
 ```
 
 <h3 id="post-new-short-url">POST /create</h3>
